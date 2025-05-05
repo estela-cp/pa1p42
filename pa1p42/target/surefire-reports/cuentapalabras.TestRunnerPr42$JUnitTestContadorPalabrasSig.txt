@@ -1,53 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: cuentapalabras.TestRunnerPr42$JUnitTestContadorPalabrasSig
 -------------------------------------------------------------------------------
-Tests run: 10, Failures: 4, Errors: 0, Skipped: 4, Time elapsed: 0.047 s <<< FAILURE! -- in cuentapalabras.TestRunnerPr42$JUnitTestContadorPalabrasSig
-cuentapalabras.TestRunnerPr42$JUnitTestContadorPalabrasSig.contadorPalabrasSigIncluyeTodasFicheroTest1 -- Time elapsed: 0.006 s <<< FAILURE!
-org.opentest4j.AssertionFailedError: 
-
-> Error: incluyeTodasFichero() ; toString(): ==> expected: <[ GUERRA : 5 - TENIA : 2 - JARRA : 3 - PARRA : 7 - PERRA : 6 - PERO : 1 - ROMPIO : 1 - PEGO : 1 - PORRA : 3 - OIGA : 1 - USTED : 1 - BUEN : 1 - HOMBRE : 1 - POR : 1 - QUE : 1 - HA : 1 - PEGADO : 2 - PORQUE : 1 - HUBIERA : 2 - ROTO : 1 ]> but was: <[ GUERRA : 5 - TENIA : 2 - UNA : 2 - JARRA : 3 - Y : 1 - PARRA : 7 - PERRA : 6 - PERO : 1 - LA : 10 - DE : 8 - ROMPIO : 1 - PEGO : 1 - CON : 3 - PORRA : 3 - A : 3 - OIGA : 1 - USTED : 1 - BUEN : 1 - HOMBRE : 1 - POR : 1 - QUE : 1 - HA : 1 - PEGADO : 2 - PORQUE : 1 - SI : 1 - NO : 2 - HUBIERA : 2 - ROTO : 1 ]>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1156)
-	at cuentapalabras.TestRunnerPr42$JUnitTestContadorPalabrasSig.contadorPalabrasSigIncluyeTodasFicheroTest1(TestRunnerPr42.java:453)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-
-cuentapalabras.TestRunnerPr42$JUnitTestContadorPalabrasSig.contadorPalabrasSigIncluyeTodasTest1 -- Time elapsed: 0.005 s <<< FAILURE!
-org.opentest4j.AssertionFailedError: 
-
-> Error: incluyeTodas() ; toString(): ==> expected: <[ GUERRA : 5 - TENIA : 2 - JARRA : 3 - PARRA : 7 - PERRA : 6 - PERO : 1 - ROMPIO : 1 - PEGO : 1 - PORRA : 3 - OIGA : 1 - USTED : 1 - BUEN : 1 - HOMBRE : 1 - POR : 1 - QUE : 1 - HA : 1 - PEGADO : 2 - PORQUE : 1 - HUBIERA : 2 - ROTO : 1 ]> but was: <[ GUERRA : 5 - TENIA : 2 - UNA : 2 - JARRA : 3 - Y : 1 - PARRA : 7 - PERRA : 6 - PERO : 1 - LA : 10 - DE : 8 - ROMPIO : 1 - PEGO : 1 - CON : 3 - PORRA : 3 - A : 3 - OIGA : 1 - USTED : 1 - BUEN : 1 - HOMBRE : 1 - POR : 1 - QUE : 1 - HA : 1 - PEGADO : 2 - PORQUE : 1 - SI : 1 - NO : 2 - HUBIERA : 2 - ROTO : 1 ]>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1156)
-	at cuentapalabras.TestRunnerPr42$JUnitTestContadorPalabrasSig.contadorPalabrasSigIncluyeTodasTest1(TestRunnerPr42.java:440)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-
-cuentapalabras.TestRunnerPr42$JUnitTestContadorPalabrasSig.contadorPalabrasSigLeeArrayNoSigTest1 -- Time elapsed: 0.003 s <<< FAILURE!
-org.opentest4j.AssertionFailedError: 
-
-> Error: incluyeTodas() ; toString(): ==> expected: <[ GUERRA : 5 - TENIA : 2 - JARRA : 3 - PARRA : 7 - PERRA : 6 - PERO : 1 - ROMPIO : 1 - PEGO : 1 - PORRA : 3 - OIGA : 1 - USTED : 1 - BUEN : 1 - HOMBRE : 1 - POR : 1 - QUE : 1 - HA : 1 - PEGADO : 2 - PORQUE : 1 - HUBIERA : 2 - ROTO : 1 ]> but was: <[ GUERRA : 5 - TENIA : 2 - UNA : 2 - JARRA : 3 - Y : 1 - PARRA : 7 - PERRA : 6 - PERO : 1 - LA : 10 - DE : 8 - ROMPIO : 1 - PEGO : 1 - CON : 3 - PORRA : 3 - A : 3 - OIGA : 1 - USTED : 1 - BUEN : 1 - HOMBRE : 1 - POR : 1 - QUE : 1 - HA : 1 - PEGADO : 2 - PORQUE : 1 - SI : 1 - NO : 2 - HUBIERA : 2 - ROTO : 1 ]>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1156)
-	at cuentapalabras.TestRunnerPr42$JUnitTestContadorPalabrasSig.contadorPalabrasSigLeeArrayNoSigTest1(TestRunnerPr42.java:410)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-
-cuentapalabras.TestRunnerPr42$JUnitTestContadorPalabrasSig.contadorPalabrasSigLeeFicheroNoSigTest1 -- Time elapsed: 0.005 s <<< FAILURE!
+Tests run: 10, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.056 s <<< FAILURE! -- in cuentapalabras.TestRunnerPr42$JUnitTestContadorPalabrasSig
+cuentapalabras.TestRunnerPr42$JUnitTestContadorPalabrasSig.contadorPalabrasSigLeeFicheroNoSigTest1 -- Time elapsed: 0.011 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 
 > Error: incluyeTodas() ; toString(): ==> expected: <[ GUERRA : 5 - TENIA : 2 - JARRA : 3 - PARRA : 7 - PERRA : 6 - PERO : 1 - ROMPIO : 1 - PEGO : 1 - PORRA : 3 - OIGA : 1 - USTED : 1 - BUEN : 1 - HOMBRE : 1 - POR : 1 - QUE : 1 - HA : 1 - PEGADO : 2 - PORQUE : 1 - HUBIERA : 2 - ROTO : 1 ]> but was: <[ GUERRA : 5 - TENIA : 2 - UNA : 2 - JARRA : 3 - Y : 1 - PARRA : 7 - PERRA : 6 - PERO : 1 - LA : 10 - DE : 8 - ROMPIO : 1 - PEGO : 1 - CON : 3 - PORRA : 3 - A : 3 - OIGA : 1 - USTED : 1 - BUEN : 1 - HOMBRE : 1 - POR : 1 - QUE : 1 - HA : 1 - PEGADO : 2 - PORQUE : 1 - SI : 1 - NO : 2 - HUBIERA : 2 - ROTO : 1 ]>

@@ -44,14 +44,14 @@ public class ContadorPalabrasSig extends ContadorPalabras{
         String[] palabrasSeparadas= linea.split(del);
         for(int i=0; i< noSignificativas.size();i++){
             if(palabrasSeparadas[i]!=null && !palabrasSeparadas[i].isEmpty()){
-                noSignificativas.add(palabrasSeparadas[i]);
+                noSignificativas.add(palabrasSeparadas[i].toUpperCase());
             }
         }
     }
 
     protected void incluye(String pal){
-        if(!noSignificativas.contains(pal)){
-            super.incluye(pal);
+        if(!noSignificativas.contains(pal.toUpperCase())){
+            super.incluye(pal.toUpperCase());
         }
     }
 }

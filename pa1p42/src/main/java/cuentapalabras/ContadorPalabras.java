@@ -20,7 +20,7 @@ public class ContadorPalabras {
 
     protected void incluye(String pal){
         if(pal!=""){
-            PalabraEnTexto palabra= new PalabraEnTexto(pal);
+            PalabraEnTexto palabra= new PalabraEnTexto(pal.toUpperCase());
             int posicion=buscar(palabra);
             if(posicion==-1){
                 palabras.add(palabra);
@@ -47,7 +47,7 @@ public class ContadorPalabras {
     private void incluyeTodas(String linea, String del){
         String[] palabrasSeparadas= linea.split(del);
         for(int i=0; i<palabrasSeparadas.length;i++){
-            incluye(palabrasSeparadas[i]);
+            incluye(palabrasSeparadas[i].toUpperCase());
         }
     }
 
@@ -76,7 +76,7 @@ public class ContadorPalabras {
         PalabraEnTexto palabra= new PalabraEnTexto(pal);
         int posicion=buscar(palabra);
         if(posicion==-1){
-            throw new NoSuchElementException();
+            throw new NoSuchElementException("No existe la palabra "+pal);
         }
         return palabras.get(posicion);
     }

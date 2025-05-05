@@ -32,6 +32,7 @@ import org.junit.platform.suite.api.SelectClasses;
 import org.junit.platform.suite.api.Suite;
 
 import cuentapalabras.*;
+import pruebas.*;
 
 public class TestRunnerPr42 {
     //----------------------------------------------------------------------
@@ -1150,4 +1151,4 @@ public class TestRunnerPr42 {
     //----------------------------------------------------------------------
 }
 //----------------------------------------------
-}
+

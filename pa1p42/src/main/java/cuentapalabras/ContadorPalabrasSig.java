@@ -20,7 +20,7 @@ public class ContadorPalabrasSig extends ContadorPalabras{
         noSignificativas.clear();
 
         for(int i=0; i< palsNS.length;i++){
-            if(palsNS[i]!=null){
+            if(palsNS[i]!=null && !palsNS[i].isEmpty()){
                 noSignificativas.add(palsNS[i].toUpperCase());
             }
         }
@@ -43,7 +43,7 @@ public class ContadorPalabrasSig extends ContadorPalabras{
     private void anyadePalabrasNoSignificativas(String linea, String del){
         String[] palabrasSeparadas= linea.split(del);
         for(int i=0; i< noSignificativas.size();i++){
-            if(palabrasSeparadas[i]!=null){
+            if(palabrasSeparadas[i]!=null && !palabrasSeparadas[i].isEmpty()){
                 noSignificativas.add(palabrasSeparadas[i]);
             }
         }

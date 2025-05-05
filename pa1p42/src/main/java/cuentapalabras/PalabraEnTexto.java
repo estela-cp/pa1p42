@@ -1,5 +1,7 @@
 package cuentapalabras;
 
+import java.util.Objects;
+
 public class PalabraEnTexto {
     private String palabra;
     private int veces;
@@ -23,5 +25,9 @@ public class PalabraEnTexto {
 
     public void incrementa(){
          this.veces++;
+    }
+
+    public int hashCode(){
+        return Objects.hash(palabra);
     }
 }

@@ -72,15 +72,13 @@ public class ContadorPalabras {
 
     }
 
-    public PalabraEnTexto encuentra(String pal){
+    public PalabraEnTexto encuentra(String pal) {
         PalabraEnTexto palabra= new PalabraEnTexto(pal);
-        boolean encontrado=false;
-        for(int i=0; i<palabras.size() && !encontrado;i++){
-            if(palabra.equals(palabras.get(i))){
-                return palabras.get(i);
-            }
+        int posicion=buscar(palabra);
+        if(posicion==-1){
+            throw new NoSuchElementException();
         }
-        throw new NoSuchElementException("Palabra no encontrada");
+        return palabras.get(posicion);
     }
 
     public String toString(){
